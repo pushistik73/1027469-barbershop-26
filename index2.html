@@ -30,14 +30,61 @@
       <li><a href="#">Средства для ухода</a></li>
     </ul>
     </section>
-    <form action="">
-      <h2>Производители</h2>
-       <label><input type="radio" name="baxter">baxter of California</label> <br>
-       <label><input type="radio" name="mr">mr natty</label> <br>
-       <label><input type="radio" name="suav">Suavecito</label> <br>
-       <label><input type="radio" name="malin">malin+goetz</label> <br>
-       <label><input type="radio" name="mur">Murray's</label> <br>
-       
+
+    <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+      <fieldset>
+        <legend>Производители:</legend>
+        <ul>
+          <li>
+            <input type="checkbox" name="baxter-of-california" id="filter-of-california" checked>
+            <label for="filter-of-california">
+              Baxter of California
+            </label>
+          </li>
+          <li>
+            <input type="checkbox" name="mr-natty" id="natty">
+            <label for="natty">
+              Mr Natty
+            </label>
+          </li>
+          <li>
+            <input type="checkbox" name="suavecito" id="sua" checked>
+            <label for="sua">Suavecito</label>
+          </li>
+          <li>
+            <input type="checkbox" name="malin+goetz" id="mal">
+            <label for="mal">Malin+Goetz</label>
+          </li>
+          <li>
+            <input type="checkbox" name="Murray's" id="murray">
+            <label for="murray">Murray's</label>
+          </li>
+          <li>
+            <input type="checkbox" name="American-crew" id="american" checked>
+            <label for="american">American crew</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Группы товаров:</legend>
+        <ul>
+         <li>
+           <input type="radio" name="product-group" id="britva" value="shaving">
+           <label for="britva">Бритвенные принадлежности</label>
+         </li>
+         <li>
+           <input type="radio" name="product-group" id="uhod" value="hair-care" checked>
+           <label for="uhod">Средства для ухода</label>
+         </li>
+         <li>
+           <input type="radio" name="product-group" id="accs" value="accessions">
+           <label for="accs">Аксессуары</label>
+         </li>
+        </ul>
+       </fieldset>
+       <button type="submit">Показать</button>
+
     </form>
+
 
   </main>
